@@ -16,13 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBa-K1-t4B">
+                                <rect key="frame" x="263" y="94" width="75" height="30"/>
+                                <state key="normal" title="HelloWorld"/>
+                                <connections>
+                                    <segue destination="q6z-sQ-LdT" kind="show" id="mBW-Sx-9Ec"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hBa-K1-t4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HhA-Jc-COV"/>
+                            <constraint firstItem="hBa-K1-t4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="gkH-jx-Ucu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ell-Jx-DSM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--HelloWorld-->
+        <scene sceneID="txC-oA-9rH">
+            <objects>
+                <viewController title="HelloWorld" id="q6z-sQ-LdT" customClass="HelloWorldViewController" customModule="GrpcMobileDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KkK-Wz-z6J"/>
+                        <viewControllerLayoutGuide type="bottom" id="8mB-pw-Blc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9vt-qP-OAf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrX-Vs-20a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TLJ-UJ-ul8">

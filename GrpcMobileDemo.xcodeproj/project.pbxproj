@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49200DA01D6B13F300923B4A /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49200D9F1D6B13F300923B4A /* HelloWorldViewController.swift */; };
 		49A4ECF51D683089007C1AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4ECF41D683089007C1AC0 /* AppDelegate.swift */; };
 		49A4ECF71D683089007C1AC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4ECF61D683089007C1AC0 /* MainViewController.swift */; };
 		49A4ECFA1D683089007C1AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A4ECF81D683089007C1AC0 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		05A963B270CD59FC806D986B /* Pods-GrpcMobileDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrpcMobileDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrpcMobileDemoTests/Pods-GrpcMobileDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C9E8D7C5961A8661F41E6B8 /* Pods_GrpcMobileDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrpcMobileDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49200D9F1D6B13F300923B4A /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 		49A4ECF11D683089007C1AC0 /* GrpcMobileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrpcMobileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A4ECF41D683089007C1AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A4ECF61D683089007C1AC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				49A4ECFB1D683089007C1AC0 /* Assets.xcassets */,
 				49A4ECFD1D683089007C1AC0 /* LaunchScreen.storyboard */,
 				49A4ED001D683089007C1AC0 /* Info.plist */,
+				49200D9F1D6B13F300923B4A /* HelloWorldViewController.swift */,
 			);
 			path = GrpcMobileDemo;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			files = (
 				49A4ECF71D683089007C1AC0 /* MainViewController.swift in Sources */,
 				49A4ECF51D683089007C1AC0 /* AppDelegate.swift in Sources */,
+				49200DA01D6B13F300923B4A /* HelloWorldViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
