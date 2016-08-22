@@ -48,8 +48,33 @@
                     <view key="view" contentMode="scaleToFill" id="9vt-qP-OAf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWL-rM-KSj">
+                                <rect key="frame" x="240" y="94" width="121" height="30"/>
+                                <state key="normal" title="Request SayHello"/>
+                                <connections>
+                                    <action selector="requestButtonPressed:" destination="q6z-sQ-LdT" eventType="touchUpInside" id="eLH-EC-X5h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-u7-tB7">
+                                <rect key="frame" x="243.5" y="174" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kNY-u7-tB7" firstAttribute="top" secondItem="tWL-rM-KSj" secondAttribute="bottom" constant="50" id="3So-L8-s4H"/>
+                            <constraint firstItem="tWL-rM-KSj" firstAttribute="centerX" secondItem="9vt-qP-OAf" secondAttribute="centerX" id="IBd-nP-EC9"/>
+                            <constraint firstItem="kNY-u7-tB7" firstAttribute="centerX" secondItem="9vt-qP-OAf" secondAttribute="centerX" id="R3v-g9-JOm"/>
+                            <constraint firstItem="kNY-u7-tB7" firstAttribute="centerX" secondItem="9vt-qP-OAf" secondAttribute="centerX" id="kSR-5u-j9O"/>
+                            <constraint firstItem="tWL-rM-KSj" firstAttribute="top" secondItem="KkK-Wz-z6J" secondAttribute="bottom" constant="30" id="l1e-yu-pDp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelStatus" destination="kNY-u7-tB7" id="Aw9-Dj-gRD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrX-Vs-20a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
