@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "com.hosopy.grpcdemo.streaming";
+option objc_class_prefix = "STM";
+
+package streaming;
+
+service Repository {
+  // client-side streaming RPC
+  rpc store (stream Item) returns (StoreReply) {}
+  // server-side streaming RPC
+  rpc fetch (FetchRequest) returns (stream Item) {}
+  // bidirectional streaming RPC
+  rpc storeAndFetch (stream Item) returns (stream Item) {}
+}
+
+message Item {
+  string uuid = 1;
+  string name = 2;
+}
+
+message StoreReply {
+  string message = 1;
+}
+
+message FetchRequest {
+  string num_items = 1;
+}

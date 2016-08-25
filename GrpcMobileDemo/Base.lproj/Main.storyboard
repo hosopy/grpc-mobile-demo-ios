@@ -24,10 +24,19 @@
                                     <segue destination="q6z-sQ-LdT" kind="show" id="mBW-Sx-9Ec"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot7-Gc-m0a">
+                                <rect key="frame" x="230" y="154" width="140" height="30"/>
+                                <state key="normal" title="ClientSideStreaming"/>
+                                <connections>
+                                    <segue destination="bnJ-aS-qcg" kind="show" id="h0j-KQ-Iqi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ot7-Gc-m0a" firstAttribute="top" secondItem="hBa-K1-t4B" secondAttribute="bottom" constant="30" id="3j1-hz-1wG"/>
                             <constraint firstItem="hBa-K1-t4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HhA-Jc-COV"/>
+                            <constraint firstItem="ot7-Gc-m0a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jsc-cp-eTf"/>
                             <constraint firstItem="hBa-K1-t4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="gkH-jx-Ucu"/>
                         </constraints>
                     </view>
@@ -79,6 +88,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrX-Vs-20a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1794" y="429"/>
+        </scene>
+        <!--Client Side Streaming View Controller-->
+        <scene sceneID="kxV-HS-v7V">
+            <objects>
+                <viewController id="bnJ-aS-qcg" customClass="ClientSideStreamingViewController" customModule="GrpcMobileDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="89O-J2-cMo"/>
+                        <viewControllerLayoutGuide type="bottom" id="W81-Bk-cxz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PH0-xO-ync">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmk-Rj-rZS">
+                                <rect key="frame" x="280" y="214" width="41" height="30"/>
+                                <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="finishButtonPressed:" destination="bnJ-aS-qcg" eventType="touchUpInside" id="phy-9a-U7z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Init" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cto-P0-kBY">
+                                <rect key="frame" x="288" y="274" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMh-Ds-9WE">
+                                <rect key="frame" x="283" y="94" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="bnJ-aS-qcg" eventType="touchUpInside" id="Vt3-fo-34S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ce-gN-Cel">
+                                <rect key="frame" x="195" y="154" width="211" height="30"/>
+                                <state key="normal" title="Write an item to request buffer"/>
+                                <connections>
+                                    <action selector="storeButtonPressed:" destination="bnJ-aS-qcg" eventType="touchUpInside" id="5Rj-Zl-pZQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IMh-Ds-9WE" firstAttribute="top" secondItem="89O-J2-cMo" secondAttribute="bottom" constant="30" id="1nh-hP-hPY"/>
+                            <constraint firstItem="Bmk-Rj-rZS" firstAttribute="centerX" secondItem="PH0-xO-ync" secondAttribute="centerX" id="6sd-Oo-R4v"/>
+                            <constraint firstItem="9Ce-gN-Cel" firstAttribute="top" secondItem="89O-J2-cMo" secondAttribute="bottom" constant="30" id="AnU-pk-Xme"/>
+                            <constraint firstItem="cto-P0-kBY" firstAttribute="centerX" secondItem="PH0-xO-ync" secondAttribute="centerX" id="GVQ-TD-hbY"/>
+                            <constraint firstItem="cto-P0-kBY" firstAttribute="top" secondItem="Bmk-Rj-rZS" secondAttribute="bottom" constant="30" id="Udh-8B-kpb"/>
+                            <constraint firstItem="9Ce-gN-Cel" firstAttribute="centerX" secondItem="PH0-xO-ync" secondAttribute="centerX" id="V1m-y2-cpc"/>
+                            <constraint firstItem="IMh-Ds-9WE" firstAttribute="centerX" secondItem="PH0-xO-ync" secondAttribute="centerX" id="bOb-yT-K0n"/>
+                            <constraint firstItem="cto-P0-kBY" firstAttribute="top" secondItem="Bmk-Rj-rZS" secondAttribute="bottom" constant="30" id="pMd-6o-fex"/>
+                            <constraint firstItem="9Ce-gN-Cel" firstAttribute="top" secondItem="IMh-Ds-9WE" secondAttribute="bottom" constant="30" id="tt3-bd-Vu1"/>
+                            <constraint firstItem="IMh-Ds-9WE" firstAttribute="top" secondItem="89O-J2-cMo" secondAttribute="bottom" constant="30" id="uJM-Yp-RUu"/>
+                            <constraint firstItem="Bmk-Rj-rZS" firstAttribute="top" secondItem="9Ce-gN-Cel" secondAttribute="bottom" constant="30" id="vJY-bb-Vga"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AnU-pk-Xme"/>
+                                <exclude reference="uJM-Yp-RUu"/>
+                                <exclude reference="Udh-8B-kpb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelStatus" destination="cto-P0-kBY" id="dIE-pM-pIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npl-Ja-L4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="1206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TLJ-UJ-ul8">

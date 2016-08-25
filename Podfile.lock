@@ -26,14 +26,14 @@ PODS:
     - Protobuf (~> 3.0)
   - gRPC-RxLibrary (1.0.0)
   - Protobuf (3.0.0)
-  - RemoteClient (0.0.1):
+  - RemoteClient (0.0.2):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0.0)"
-    - RemoteClient/Messages (= 0.0.1)
-    - RemoteClient/Services (= 0.0.1)
-  - RemoteClient/Messages (0.0.1):
+    - RemoteClient/Messages (= 0.0.2)
+    - RemoteClient/Services (= 0.0.2)
+  - RemoteClient/Messages (0.0.2):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0.0)"
     - Protobuf
-  - RemoteClient/Services (0.0.1):
+  - RemoteClient/Services (0.0.2):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0.0)"
     - gRPC-ProtoRPC
     - RemoteClient/Messages
@@ -54,7 +54,7 @@ SPEC CHECKSUMS:
   gRPC-ProtoRPC: 51745b5ebe4a844dc6e1ecf767d74ae3d124ea1e
   gRPC-RxLibrary: 3a8c5543115fb2183ed5624678e7ecbac5e9e4ad
   Protobuf: c032ce1bdf7a266acfd640fbfd8bdb166127c7f5
-  RemoteClient: 5a30b52f76d26fcbf6dce83fe45efaed45a5cf32
+  RemoteClient: 00228d1d6912f788141de6bfffc35de87734cc4f
 
 PODFILE CHECKSUM: b0c457e7d1708ed479898c60c855d8ac011c71b0
 
