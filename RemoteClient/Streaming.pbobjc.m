@@ -144,7 +144,7 @@ typedef struct STMStoreReply__storage_ {
 
 typedef struct STMFetchRequest__storage_ {
   uint32_t _has_storage_[1];
-  NSString *numItems;
+  int32_t numItems;
 } STMFetchRequest__storage_;
 
 // This method is threadsafe because it is initially called
@@ -160,7 +160,7 @@ typedef struct STMFetchRequest__storage_ {
         .hasIndex = 0,
         .offset = (uint32_t)offsetof(STMFetchRequest__storage_, numItems),
         .flags = GPBFieldOptional,
-        .dataType = GPBDataTypeString,
+        .dataType = GPBDataTypeInt32,
       },
     };
     GPBDescriptor *localDescriptor =

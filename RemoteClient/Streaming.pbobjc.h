@@ -74,7 +74,7 @@ typedef GPB_ENUM(STMFetchRequest_FieldNumber) {
 
 @interface STMFetchRequest : GPBMessage
 
-@property(nonatomic, readwrite, copy, null_resettable) NSString *numItems;
+@property(nonatomic, readwrite) int32_t numItems;
 
 @end
 

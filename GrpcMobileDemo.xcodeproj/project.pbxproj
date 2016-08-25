@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49200DA01D6B13F300923B4A /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49200D9F1D6B13F300923B4A /* HelloWorldViewController.swift */; };
 		49200DDD1D6ECD1C00923B4A /* ClientSideStreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49200DDC1D6ECD1C00923B4A /* ClientSideStreamingViewController.swift */; };
+		49200DDF1D6EE16300923B4A /* ServerSideStreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49200DDE1D6EE16300923B4A /* ServerSideStreamingViewController.swift */; };
 		49A4ECF51D683089007C1AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4ECF41D683089007C1AC0 /* AppDelegate.swift */; };
 		49A4ECF71D683089007C1AC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4ECF61D683089007C1AC0 /* MainViewController.swift */; };
 		49A4ECFA1D683089007C1AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A4ECF81D683089007C1AC0 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		0C9E8D7C5961A8661F41E6B8 /* Pods_GrpcMobileDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrpcMobileDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49200D9F1D6B13F300923B4A /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 		49200DDC1D6ECD1C00923B4A /* ClientSideStreamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientSideStreamingViewController.swift; sourceTree = "<group>"; };
+		49200DDE1D6EE16300923B4A /* ServerSideStreamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSideStreamingViewController.swift; sourceTree = "<group>"; };
 		49A4ECF11D683089007C1AC0 /* GrpcMobileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrpcMobileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A4ECF41D683089007C1AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A4ECF61D683089007C1AC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				49A4ED001D683089007C1AC0 /* Info.plist */,
 				49200D9F1D6B13F300923B4A /* HelloWorldViewController.swift */,
 				49200DDC1D6ECD1C00923B4A /* ClientSideStreamingViewController.swift */,
+				49200DDE1D6EE16300923B4A /* ServerSideStreamingViewController.swift */,
 			);
 			path = GrpcMobileDemo;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A4ECF71D683089007C1AC0 /* MainViewController.swift in Sources */,
+				49200DDF1D6EE16300923B4A /* ServerSideStreamingViewController.swift in Sources */,
 				49A4ECF51D683089007C1AC0 /* AppDelegate.swift in Sources */,
 				49200DA01D6B13F300923B4A /* HelloWorldViewController.swift in Sources */,
 				49200DDD1D6ECD1C00923B4A /* ClientSideStreamingViewController.swift in Sources */,

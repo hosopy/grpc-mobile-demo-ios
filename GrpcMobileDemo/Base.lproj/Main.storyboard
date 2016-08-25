@@ -31,6 +31,13 @@
                                     <segue destination="bnJ-aS-qcg" kind="show" id="h0j-KQ-Iqi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esN-OF-5lE">
+                                <rect key="frame" x="228" y="214" width="145" height="30"/>
+                                <state key="normal" title="ServerSideStreaming"/>
+                                <connections>
+                                    <segue destination="ix4-wN-XkI" kind="show" id="ABh-CU-7EF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -38,13 +45,15 @@
                             <constraint firstItem="hBa-K1-t4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HhA-Jc-COV"/>
                             <constraint firstItem="ot7-Gc-m0a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jsc-cp-eTf"/>
                             <constraint firstItem="hBa-K1-t4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="gkH-jx-Ucu"/>
+                            <constraint firstItem="esN-OF-5lE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nwt-sY-KeX"/>
+                            <constraint firstItem="esN-OF-5lE" firstAttribute="top" secondItem="ot7-Gc-m0a" secondAttribute="bottom" constant="30" id="zoE-1q-464"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ell-Jx-DSM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="429"/>
+            <point key="canvasLocation" x="967" y="1182"/>
         </scene>
         <!--HelloWorld-->
         <scene sceneID="txC-oA-9rH">
@@ -58,6 +67,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-u7-tB7">
+                                <rect key="frame" x="243.5" y="174" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWL-rM-KSj">
                                 <rect key="frame" x="240" y="94" width="121" height="30"/>
                                 <state key="normal" title="Request SayHello"/>
@@ -65,12 +80,6 @@
                                     <action selector="requestButtonPressed:" destination="q6z-sQ-LdT" eventType="touchUpInside" id="eLH-EC-X5h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-u7-tB7">
-                                <rect key="frame" x="243.5" y="174" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -159,6 +168,48 @@
             </objects>
             <point key="canvasLocation" x="1794" y="1206"/>
         </scene>
+        <!--Server Side Streaming View Controller-->
+        <scene sceneID="lrn-hk-f12">
+            <objects>
+                <viewController id="ix4-wN-XkI" customClass="ServerSideStreamingViewController" customModule="GrpcMobileDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GxO-Qp-RzG"/>
+                        <viewControllerLayoutGuide type="bottom" id="GxV-2g-UJe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7bV-dN-Mu8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExF-lm-jTQ">
+                                <rect key="frame" x="222" y="94" width="156" height="30"/>
+                                <state key="normal" title="Request fetch(5 items)"/>
+                                <connections>
+                                    <action selector="requestButtonPressed:" destination="ix4-wN-XkI" eventType="touchUpInside" id="hMT-1T-euV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdv-aY-s7w">
+                                <rect key="frame" x="243.5" y="154" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ExF-lm-jTQ" firstAttribute="top" secondItem="GxO-Qp-RzG" secondAttribute="bottom" constant="30" id="552-uY-IXQ"/>
+                            <constraint firstItem="bdv-aY-s7w" firstAttribute="centerX" secondItem="7bV-dN-Mu8" secondAttribute="centerX" id="ByD-Iq-5pj"/>
+                            <constraint firstItem="ExF-lm-jTQ" firstAttribute="centerX" secondItem="7bV-dN-Mu8" secondAttribute="centerX" id="Rhe-dz-cgM"/>
+                            <constraint firstItem="bdv-aY-s7w" firstAttribute="top" secondItem="ExF-lm-jTQ" secondAttribute="bottom" constant="30" id="z4f-1C-mqo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelStatus" destination="bdv-aY-s7w" id="tWk-id-A1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlr-8H-lJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="1970"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="TLJ-UJ-ul8">
             <objects>
@@ -175,7 +226,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hF-uR-tb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="1089"/>
+            <point key="canvasLocation" x="182" y="1182"/>
         </scene>
     </scenes>
 </document>
