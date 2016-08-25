@@ -32,8 +32,8 @@ class HelloWorldViewController: UIViewController {
         let request = HLWHelloRequest()
         request.name = "neko"
 
-        let client = HLWGreeter(host: "localhost:50051")
-        client.sayHelloWithRequest(request) { response, error in
+        let service = HLWGreeter(host: "localhost:50051")
+        service.sayHelloWithRequest(request) { response, error in
             // response is HLWHelloReply
             if let response = response {
                 self.labelStatus.text = response.message
